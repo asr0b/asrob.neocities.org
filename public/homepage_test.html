@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron's Homepage</title>    
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"> 
-    <link href="https://asrob.neocities.org/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   
   <body>
@@ -22,20 +22,20 @@
       <div id="headerArea">
 
         <div id=header>
-          <a href="https://asrob.neocities.org/homepage_test.html">
+          <a href="homepage_test.html">
             <h1>asrob's webpage</h1>
           </a>
         </div>
 
         <nav id="navbar">
-          <a id="button">HOME</a>
-          <a id="button">ABOUT ME</a>
-          <a id="button">POSTS</a>
-          <a id="button" style="font-size: 21px;">GUESTBOOK</a>
-          <a id="button">REVIEWS</a>
-          <a id="button">RECIPES</a>
-          <a id="button">INTERESTS</a>
-          <a id="button">LINKS</a>           
+          <a id="button" href="homepage_test.html"><span>HOME</span></a>
+          <a id="constructionButton"><span>ABOUT ME</span></a>
+          <a id="constructionButton"><span>POSTS</span></a>
+          <a id="constructionButton"><span>REVIEWS</span></a>
+          <a id="constructionButton"><span>RECIPES</span></a>
+          <a id="constructionButton"><span>INTERESTS</span></a>
+          <a id="button" style="font-size: 21px;" href="guestbook.html"><span>GUESTBOOK</span></a>
+          <a id="constructionButton"><span>LINKS</span></a>           
         </nav>
 
       <div id="flex">
@@ -216,7 +216,27 @@
             
             #button:hover{
               background-image: url(images/buttonz/navbar/inset.png)}
+
+            #constructionButton {
+            position: relative;
+            width: 88px;
+            height: 31px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-image: url(images/buttonz/navbar/outset.png);
+            background-repeat: no-repeat;
+            background-size: 88px 31px;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+            font-size: 22px;}
             
+            #constructionButton:hover{
+              background-image: url(images/buttonz/navbar/under_construction.png);}
+            
+            #constructionButton:hover span {
+              opacity: 0;}
+
+
             #container {
                 max-width: 900px;
                 /* this is the width of your layout! */
@@ -239,27 +259,6 @@
                 font-size: larger;
                 background-color: #003c80;}
             
-            #header {
-                position: relative;
-                text-align: center;
-                width: 100%;
-                background-color: #5e4e8c;
-                /* header color here! */
-                height: 150px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-                   you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 25%;
-                display: flex; /* Enables flexbox for centering */
-                justify-content: center; /* Centers the content horizontally */
-                align-items: center; /* Centers the content vertically */}
-            
-            #header h1 { 
-              font-size: vw; /* Scales font size based on viewport width */
-              text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
-              font-family: vib;}
-
             #navbar {
               height: auto;
               background-color: #003c80;
@@ -271,14 +270,13 @@
               flex-wrap:wrap;
               list-style-type: none;
               justify-content:space-evenly;
-              row-gap: 5px;
-            }
+              row-gap: 5px;}
+            
             #navbar a {
             display: flex;
             flex-wrap: wrap;
             text-decoration: none;
-            color: #fceaff;
-            }
+            color: #fceaff;}
 
         
             #flex {
@@ -415,7 +413,7 @@
       data-config="{'skin':'skins/aquaBlue/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Animal Crossing: City Folk (10AM)','url':'https://www.youtube.com/watch?v=uFq-VvnEa80&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=11'},{'title':'Animal Crossing: City Folk (1PM)','url':'https://www.youtube.com/watch?v=dAABrbS8QeA&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=14'},{'title':'Animal Crossing: City Folk (3AM)','url':'https://www.youtube.com/watch?v=3BDqAy2svoY&list=PL3RM7GhHO-SF3fCVuL6PMaXZ50INCZoHr&index=5'},{'title':'Animal Crossing: City Folk (5PM)','url':'https://www.youtube.com/watch?v=zcIDJd-ncHI&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=18'},{'title':'Animal Crossing: City Folk (6AM)','url':'https://www.youtube.com/watch?v=hhlLbg4CRBc&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=7'},{'title':'Animal Crossing: City Folk (7AM)','url':'https://www.youtube.com/watch?v=jcPIAICO-DI&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=8'},{'title':'Animal Crossing: City Folk (9PM)','url':'https://www.youtube.com/watch?v=Au8cSsWgYUY&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=22'},{'title':'D Fast - Scales of Zordium','url':'https://www.youtube.com/watch?v=Honvo0dDWbo'},{'title':'Deus Ex - UNATCO Theme (Conversation)','url':'https://www.youtube.com/watch?v=2uKxEoQQiSQ%27'},{'title':'Tomodach Collection: City Hall','url':'https://www.youtube.com/watch?v=y8rqz4mpG3c'},{'title':'Tomodachi Life: Map (Night) ','url':'https://www.youtube.com/watch?v=pxAOSS7ahXs&list=PLJyCGAENff02WpWMBr8sV8eKR_gp2aLHw&index=5'},{'title':'Xerxes - .meditation (Variation 1)','url':'https://www.youtube.com/watch?v=5v_IxPB94_Y'}]}" >
     </script>
     <!-- SCM Music Player script end -->
-  </div>
+      </div>
   
       <div id="IMAGE SCALING">
       <!--IMAGE SCALING-->
