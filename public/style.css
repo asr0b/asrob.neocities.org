@@ -148,7 +148,7 @@ img {
 }
 @font-face {
   font-family: "vib"; 
-  src: url("/fonts/vib-ribbon.ttf") format("truetype");
+  src: url("fonts/vib-ribbon.ttf") format("truetype");
 }
 
 /* ------------------------- */
