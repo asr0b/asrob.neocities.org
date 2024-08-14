@@ -1,32 +1,28 @@
-body 
-{
-  background-color: lightblue;
-  background-image: linear-gradient(to top, blue , #c400ff);
-  /*background: linear-gradient(0deg, rgba(0,18,255,1) 0%, rgba(255,0,255,1) 50%, rgba(0,108,255,1) 100%);*/
-  min-height: 100vh;
-  /*background-image: url("images/backgrounds/catz.png");
-  background-attachment: fixed; */
-  text-align: center;
-  color: white;
-  font-family: xp;
-  cursor: url("images/curs0rz/toontown.png"), auto;
- 
+/*-------------------------------------------------------------------------------*/
+/*------------------------------------\(^_^)/------------------------------------*/
 
+/* Welcome to CSS hell */
+/* I maaay or not have stolen this css from someone to use as a template*/
+/* im sry pls dont sue >w< */
+/* stolen (with love) from: https://qixzy.neocities.org/ */
+/* Enjoy your stay */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+
+img {
+  max-width: 100%; 
+  height: auto;
 }
+  
+        
 
-@font-face 
-{
-  font-family: xp;
-  src: url('fonts/windows-xp-tahoma.ttf') format("truetype");
-}
+/*FONTS*/
 
-@font-face 
-{
-  font-family: "vib"; 
-  src: url("/fonts/vib-ribbon.ttf") format("truetype");
-}
 
-	@-webkit-keyframes snowflakes-fall {
+/*SNOWFLAKES :3*/
+@-webkit-keyframes snowflakes-fall {
 		0% {
 			top: -10%
 		}
@@ -34,8 +30,7 @@ body
 			top: 100%
 		}
 	}
-	
-	@-webkit-keyframes snowflakes-shake {
+@-webkit-keyframes snowflakes-shake {
 		0%,
 		100% {
 			-webkit-transform: translateX(0);
@@ -46,8 +41,7 @@ body
 			transform: translateX(80px)
 		}
 	}
-	
-	@keyframes snowflakes-fall {
+@keyframes snowflakes-fall {
 		0% {
 			top: -10%
 		}
@@ -55,8 +49,7 @@ body
 			top: 100%
 		}
 	}
-	
-	@keyframes snowflakes-shake {
+@keyframes snowflakes-shake {
 		0%,
 		100% {
 			transform: translateX(0)
@@ -65,8 +58,7 @@ body
 			transform: translateX(80px)
 		}
 	}
-	
-	.snowflake {
+.snowflake {
 		position: fixed;
 		top: -10%;
 		z-index: 9999;
@@ -85,75 +77,1641 @@ body
 		animation-iteration-count: infinite, infinite;
 		animation-play-state: running, running
 	}
-	
-	.snowflake:nth-of-type(0) {
+.snowflake:nth-of-type(0) {
 		left: 1%;
 		-webkit-animation-delay: 0s, 0s;
 		animation-delay: 0s, 0s
 	}
-	
-	.snowflake:nth-of-type(1) {
+.snowflake:nth-of-type(1) {
 		left: 10%;
 		-webkit-animation-delay: 1s, 1s;
 		animation-delay: 1s, 1s
 	}
-	
-	.snowflake:nth-of-type(2) {
+.snowflake:nth-of-type(2) {
 		left: 20%;
 		-webkit-animation-delay: 6s, .5s;
 		animation-delay: 6s, .5s
 	}
-	
-	.snowflake:nth-of-type(3) {
+.snowflake:nth-of-type(3) {
 		left: 30%;
 		-webkit-animation-delay: 4s, 2s;
 		animation-delay: 4s, 2s
 	}
-	
-	.snowflake:nth-of-type(4) {
+.snowflake:nth-of-type(4) {
 		left: 40%;
 		-webkit-animation-delay: 2s, 2s;
 		animation-delay: 2s, 2s
 	}
-	
-	.snowflake:nth-of-type(5) {
+.snowflake:nth-of-type(5) {
 		left: 50%;
 		-webkit-animation-delay: 8s, 3s;
 		animation-delay: 8s, 3s
 	}
-	
-	.snowflake:nth-of-type(6) {
+.snowflake:nth-of-type(6) {
 		left: 60%;
 		-webkit-animation-delay: 6s, 2s;
 		animation-delay: 6s, 2s
 	}
-	
-	.snowflake:nth-of-type(7) {
+.snowflake:nth-of-type(7) {
 		left: 70%;
 		-webkit-animation-delay: 2.5s, 1s;
 		animation-delay: 2.5s, 1s
 	}
-	
-	.snowflake:nth-of-type(8) {
+.snowflake:nth-of-type(8) {
 		left: 80%;
 		-webkit-animation-delay: 1s, 0s;
 		animation-delay: 1s, 0s
 	}
-	
-	.snowflake:nth-of-type(9) {
+.snowflake:nth-of-type(9) {
 		left: 90%;
 		-webkit-animation-delay: 3s, 1.5s;
 		animation-delay: 3s, 1.5s
 	}
-	
-	.snowflake:nth-of-type(10) {
+.snowflake:nth-of-type(10) {
 		left: 25%;
 		-webkit-animation-delay: 2s, 0s;
 		animation-delay: 2s, 0s
 	}
-	
-	.snowflake:nth-of-type(11) {
+.snowflake:nth-of-type(11) {
 		left: 65%;
 		-webkit-animation-delay: 4s, 2.5s;
 		animation-delay: 4s, 2.5s
 	}
+	
+
+/* ------------------------- */
+/* ----------FONTS---------- */
+/* ------------------------- */
+@font-face {
+  font-family: xp;
+  src: url('fonts/windows-xp-tahoma.ttf') format("truetype");
+}
+@font-face {
+  font-family: "vib"; 
+  src: url("/fonts/vib-ribbon.ttf") format("truetype");
+}
+
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----------HTML---------- */
+/* ------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----------BODY---------- */
+/* ------------------------- */
+body { 
+    background-color: lightblue;
+    background-image: linear-gradient(to top, blue , #c400ff);
+   /*background: linear-gradient(0deg, rgba(0,18,255,1) 0%, rgba(255,0,255,1) 50%, rgba(0,108,255,1) 100%);*/
+    min-height: 100vh;
+    /*background-image: url("images/backgrounds/catz.png");
+    background-attachment: fixed; */
+    text-align: center;
+    color: white;
+    font-family: xp;
+    cursor: url("images/curs0rz/toontown.png"), auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ---------HEADINGS-------- */
+/* ------------------------- */
+
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------SPOILER TEXT------- */
+/* ------------------------- */
+del {
+    background: rgb(87, 87, 87);
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    transition: 200ms ease-in-out;
+}
+
+del:hover {
+    color: #e9e8e8;
+    transition: 200ms ease-in-out;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------SITE LINKS------- */
+/* ------------------------- */
+/*a {
+  transition: ms ease-in-out;
+}*/
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------TABLES--------- */
+/* ------------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+td,
+th {
+    border: 1px solid rgb(56, 82, 76);
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: rgb(221, 226, 223, 0.5);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(146, 140, 156, 0.5);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------HANGING PLANTS----- */
+/* ------------------------- */
+.plants {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .plants {
+        display: none;
+    }
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]------------------------------------*/
+/*-----------------------------------INDEX PAGE-----------------------------------*/
+/*------------------------------------[][][][]------------------------------------*/
+
+/* ------------------------- */
+/* ---------Main Box-------- */
+/* ------------------------- */
+.indexmain {
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(37, 35, 46);
+    border-width: 1px;
+    background-color: rgb(76, 90, 87);
+}
+
+.indexmain h2 {
+    font-size: 16px;
+    background-color: rgb(136, 151, 124);
+    padding: 9px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 35px;
+    width: 100%;
+    color: rgb(37, 35, 46);
+    text-align: left;
+    border: solid solid none 1px;
+    border-color: rgb(37, 35, 46);
+}
+
+.indexmain ul {
+    list-style-type: none;
+    position: absolute;
+    font-size: 19px;
+    margin-top: 70px;
+    margin-left: -66px;
+    padding: 0;
+    padding-top: 2px;
+    width: 46px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgb(136, 151, 124);
+    z-index: 1;
+}
+
+.indexmain li a {
+    display: block;
+    color: rgb(214, 233, 224);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.indexmain li a:hover {
+    background-color: rgb(15, 15, 15);
+    color: rgb(177, 186, 183);
+    border-radius: 5px 0px 0px 5px;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------Site Updates------ */
+/* ------------------------- */
+.indexframe {
+    height: 170px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(37, 35, 46);
+    overflow: auto;
+    background-color: rgb(70, 64, 96);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------Image Heavy-----=- */
+/* ------------------------- */
+.imageheavy {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 578px;
+    padding: 7px;
+    border: 1px solid rgb(35, 46, 40);
+    background-color: rgb(109, 133, 109, 0.7);
+    z-index: 1;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-size: 15px;
+    letter-spacing: 2px;
+    max-width: 100%;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----Commission Info----- */
+/* ---------Button---------- */
+/* ------------------------- */
+.indexbutton {
+    background-color: rgb(136, 151, 124);
+    border: 1px solid rgb(37, 35, 46);
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(15, 15, 15);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.indexbutton:hover {
+    background-color: rgb(90, 116, 90);
+    color: white;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*-------------------------------------------------------------------------------*/
+/*------------------------------INDEX PAGE END-----------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*-----------------------------------MAIN SITE-----------------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/* ------------------------- */
+/* ------SITE CONTAINER----- */
+/* ------------------------- */
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------HEADER IMAGE------ */
+/* ------------------------- */
+#header {
+
+}
+
+#header h2 {
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(217, 243, 240);
+    background-color: rgb(47, 52, 55, 0.5);
+    border: none;
+    -webkit-text-stroke-width: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    #header {
+
+    }
+
+    #header h2 {
+        font-size: 16px;
+    }
+  }
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----NAVIGATION BAR------ */
+/* ------------------------- */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(136, 151, 124);
+    border-style: solid;
+    border-color: rgb(37, 35, 46);
+    border-width: 1px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(244, 244, 244);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: rgb(185, 211, 146);
+    color: rgb(47, 52, 55);
+}
+
+.topnav a.active {
+    background-color: rgb(185, 211, 146);
+    color: rgb(47, 52, 55);
+}
+
+@media screen and (max-width: 1000px) {
+    .topnav a {
+      font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .navbarsocials {
+      display: none;
+    }
+  }
+/* ------------------------- */
+/* ------------------------- */ 
+
+/* ------------------------- */
+/* -----NAVIGATION BAR------ */
+/* ------DROPDOWN MENU------ */
+/* ------------------------- */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* ----DROPDOWN BUTTON----- */
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .dropdown .dropbtn {
+      font-size: 17px;
+    }
+  }
+
+/* ----DROPDOWN BUTTON----- */
+/* ---------ACTIVE--------- */
+.dropdown .dropbtnactive {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgb(47, 52, 55);
+    padding: 14px 16px;
+    background-color: rgb(185, 211, 146);
+    font-family: inherit;
+    margin: 0;
+}
+
+/* ----DROPDOWN CONTENT----- */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(185, 211, 146);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: solid 1px rgb(47, 52, 55);
+    border-top: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* -----DROPDOWN LINKS------ */
+.dropdown-content a {
+    float: none;
+    color: rgb(12, 12, 12);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(102, 114, 93, 0.7);
+    color: rgb(12, 12, 12);
+}
+
+.dropdown-content a:active {
+    background-color: rgb(102, 114, 93);
+    color: rgb(12, 12, 12);
+}
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------SCROLL TO TOP------ */
+/* ----------BUTTON--------- */
+/* ------------------------- */
+#myBtn {
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    font-size: 15px;
+    border: solid 1px;
+    border-color: #000;
+    background-color: rgb(136, 151, 124);
+    color: #000;
+    letter-spacing: 1px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: rgb(136, 151, 124, 0.90);
+    color: #FFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    #myBtn {
+      padding: 5px;
+      font-size: 13px;
+    }
+  }
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+
+/* ------------------------- */
+/* ---------FLEXBOX--------- */
+/* ------------------------- */
+#flex {
+    display: flex;
+}
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------MAIN AREA-------- */
+/* ------------------------- */
+main {
+
+}
+
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----SECTION HEADERS----- */
+/* ------------------------- */
+.sectionheader {
+    background-color: rgb(136, 151, 124);
+    color: rgb(37, 35, 46);
+    padding: 25px 10px 10px 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    letter-spacing: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(37, 35, 46);
+    font-size: 25px;
+}
+
+.sectionimg {
+    float: right;
+    margin-top: -20px;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------BOX IFRAMES------- */
+/* ------------------------- */
+.boxframe {
+    background-color: rgb(177, 186, 185);
+    border: 1px solid rgb(37, 35, 46);
+    padding: 0px;
+    height: 350px;
+    color: rgb(37, 35, 46);
+    margin-bottom: 30px;
+}
+
+iframe {
+    border: none;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/* ------------------------- */
+/* ----"VIEW MORE" LINKS---- */
+/* ------------------------- */
+.viewmore {
+    text-align: right;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.viewmore a {
+    color: rgb(185, 211, 146);
+}
+
+.viewmore a:hover {
+    color: rgb(165, 255, 124);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------ASIDE AREA-------- */
+/* ------------------------- */
+aside {
+
+}
+
+aside h2 {
+
+}
+
+aside hr {
+    border-color: transparent;
+    margin: 20px;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------INFO BOXES-------- */
+/* ---Usually for Sidebar--- */
+/* ------------------------- */
+.box {
+
+}
+
+.box a {
+    text-decoration: none;
+    color: rgb(57, 97, 90);
+}
+
+.box a:hover {
+    text-decoration: none;
+    background-color: rgb(74, 136, 111, 0.5);
+    color: rgb(37, 35, 46);
+}
+
+.box ul li {
+    list-style-image: url(assets/icons/greenstar.png);
+    text-align: left;
+    margin-left: 0px;
+}
+
+.box h2 {
+    font-size: 16px;
+    background-color: rgb(136, 151, 124, 0.5);
+    padding: 10px;
+    height: 35px;
+    width: 100%;
+    color: rgb(37, 35, 46);
+    text-align: left;
+    border: none;
+}
+
+.box hr {
+    border-top: 1px solid rgb(37, 35, 46, 0.5);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------Homepage About----- */
+/* ---------Side Box-------- */
+/* ------------------------- */
+.aboot img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboot img {
+      width: 50%;
+    }
+  }
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------QIXZY SAYS------- */
+/* ------------------------- */
+.janblr img {
+    width: 90%;
+    padding-bottom: -100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .janblr img {
+      display: none;
+    }
+  }
+
+#janblr {
+    background-color: #d6d1d1;
+    font-size: 15px;
+    font-family: inherit;
+    color: rgb(37, 35, 46);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#janblr td,
+#janblr th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#janblr tr:nth-child(even) {
+    background-color: rgb(175, 174, 174)
+}
+
+#janblr a {
+    text-decoration: none;
+    color: rgb(57, 97, 90);
+}
+
+#janblr a:hover {
+    text-decoration: none;
+    background-color: rgb(74, 136, 111, 0.5);
+    color: rgb(37, 35, 46);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------FANART BOX------- */
+/* ------------------------- */
+.fanart {
+    background-color: rgb(177, 186, 185);
+    border: 1px solid rgb(37, 35, 46);
+    padding: 0px 0px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --"Link Back Here code--- */
+/* ---Thanks for Visiting--- */
+/* ------------------------- */
+pre {
+    display: block;
+    border: 1px solid rgb(37, 35, 46);
+    color: rgb(37, 35, 46);
+    height: 66px;
+    width: 170px;
+    overflow: auto;
+    font-size: 12px;
+    font-family: inherit;
+    margin: 0px;
+    padding: 10px 5px;
+    background-color: beige;
+} 
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------MAIN SITE STUFF END----------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*-----------------------------------ABOUT PAGE----------------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ---------CAT INFO-------- */
+/* ------On About Page------ */
+/* ------------------------- */
+.catbox {  
+    width: 50%;    
+    border: none; 
+    padding: 10px;
+}  
+
+#cats {
+    background-color: rgb(177, 186, 185);
+    font-size: 17px;
+    font-family: inherit;
+    text-align: justify;
+    color: rgb(37, 35, 46);
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#cats td, #cats th {
+    border: none;
+    padding: 18px;
+}
+
+#cats h2 {
+    font-size: 18px;
+    background-color: rgb(136, 151, 124, 0.5);
+    padding: 9px;
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    color: rgb(37, 35, 46);
+    border: none;
+}
+
+.catainer {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 65, 63);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.catainer .card {
+    position: relative;
+    max-width: 100%;
+    background-color: rgb(177, 186, 185);
+    margin-bottom: 25px;
+    padding: 16px;
+    display: flex;
+    border: 1px solid rgb(37, 35, 46);
+}
+
+.catainer .card h2 {
+    font-size: 18px;
+    background-color: rgb(136, 151, 124, 0.5);
+    padding: 9px;
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    color: rgb(37, 35, 46);
+    border: none;
+}
+
+.catainer .card .imgBox {
+    max-width: 50%;
+    flex: 0 0 50%; 
+}
+
+.catainer .card .imgBox img{
+    max-width: 200%;
+}
+
+.catainer .card .catent {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .catainer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .catainer {
+        flex-direction: column;
+    }
+    .catainer .card {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    .catainer .card .imgBox{
+        max-width: 100%;
+    }
+    .catainer .card .ctent {
+        margin-left: 0px;
+    }
+}
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*---------------------------------ABOUT PAGE END--------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*------------------------------------FAQ PAGE-----------------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------FAQ------------ */
+/* ------------------------- */
+#faq {
+    background-color: rgb(159, 168, 167);
+    font-size: 16px;
+    font-family: inherit;
+    color: rgb(37, 35, 46);
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#faq td,
+#faq th {
+    border: none;
+    padding: 8px;
+}
+
+#faq tr:nth-child(even) {
+    background-color: rgb(177, 186, 185)
+}
+/* ------------------------- */
+/* ------------------------- */
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*----------------------------------FAQ PAGE END---------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]------------------------------------*/
+/*----------------------------ART, LIGHTBOXES, GALLERIES--------------------------*/
+/*------------------------------------[][][][]------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----ART FOR LIGHTBOX---- */
+/* ------------------------- */
+.art {
+    width: 100%; 
+    border: 1px solid rgb(37, 35, 46);
+    overflow: hidden;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    background-color: transparent;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------SITE IMAGES------- */
+/* ------------------------- */
+img {  
+    object-fit: cover;  
+} 
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----LIGHTBOX IMAGES----- */
+/* ------------------------- */
+.litterbox {  
+    width: 100%;  
+    height: 300px;  
+    border: none; 
+    padding: 0px;
+} 
+/* ------------------------- */
+/* ------------------------- */  
+
+/* ------------------------- */
+/* -----LIGHTBOX IMAGES----- */
+/* ----Info on Hover, etc--- */
+/* ------------------------- */
+.beep {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    transition: .3s;
+}
+
+.beep img {
+    width: 100%;
+    height: 300px;
+    transition: .3s;
+}
+
+.beep:hover img {
+    filter: blur(2px) brightness(50%);
+    box-shadow: 0 0 16px rgb(255, 255, 255);
+}
+
+.beep :not(img) {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: .3s;
+}
+
+.beep h2 {
+    background-color: transparent;
+    font-size: 30px;
+    border-style: none;
+    top: 40%;
+}
+
+.beep h3 {
+    top: 60%;
+    font-size: 15px;
+}
+
+.beep:hover :not(img) {
+    opacity: 1;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----GALLERIES MENU------ */
+/* ------------------------- */
+.boxmenu {
+    background-color: rgb(177, 186, 185);
+    border: 1px solid rgb(37, 35, 46);
+    padding: 0px;
+    font-size: 16px;
+    color: rgb(37, 35, 46);
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.boxmenu ul li {
+  list-style-image: url(assets/icons/greenstar.png);
+  margin: 0px 0px 0px 10px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.boxmenu li a {
+  display: block;
+  color: rgb(37, 35, 46);
+  padding: 3px 7px;
+  text-decoration: none;
+}
+
+.boxmenu li a.active {
+  background-color: rgb(64, 96, 85, 0.5);
+  color: #fff;
+}
+
+.boxmenu li a:hover:not(.active) {
+  background-color: rgb(136, 151, 124, 0.7);
+  color: rgb(37, 35, 46);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------GALLERIES ------- */
+/* -------NAVIGATION-------- */
+/* ------------------------- */
+.navibutton {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(37, 35, 46);
+    color: rgb(37, 35, 46);
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.navibuttonactive {
+    background-color: rgb(136, 151, 124);
+}
+
+.navibuttonactive:hover {
+    background-color: rgb(136, 151, 124, 0.7);
+}
+
+.navibuttoninactive {
+    background-color: rgb(107, 107, 107);
+    color: #dddddd;
+    cursor: default;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------GALLERIES ------- */
+/* -------PAGINATION-------- */
+/* ------------------------- */
+.pagibutton {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(37, 35, 46);
+    color: rgb(37, 35, 46);
+    width: 34px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    margin: 2px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+  
+.pagibuttonactive {
+    background-color: rgb(136, 151, 124);
+}
+
+.pagibuttonactive:hover {
+    background-color: rgb(136, 151, 124, 0.7);
+}
+
+.pagibuttoninactive {
+    background-color: rgb(107, 107, 107);
+    color: #dddddd;
+}
+
+.pagibuttoninactive:hover {
+    background-color: rgb(136, 151, 124);
+    color: rgb(37, 35, 46);
+}
+
+.pagibuttondead {
+    background-color: rgb(107, 107, 107);
+    cursor: default;
+    color: transparent;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----PIXEL ART PAGE------ */
+/* ------------------------- */
+.pixel {
+    width: 100%;
+    background-color: rgb(177, 186, 185);
+    border: 1px solid rgb(37, 35, 46);
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(37, 35, 46);
+    margin-bottom: 10px;
+}
+
+.pixel a {
+    text-decoration: none;
+    color: rgb(57, 97, 90);
+}
+
+.pixel a:hover {
+    text-decoration: none;
+    background-color: rgb(74, 136, 111, 0.5);
+    color: rgb(37, 35, 46);
+}
+
+.pixel img {
+    max-width: 100%;
+}
+/* ------------------------- */
+/* ------------------------- */
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*------------------------------GALLERIES SECTION END----------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*-----------------------------------OCS PAGES-----------------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------OC POLAROIDS------- */
+/* ------------------------- */
+.row {
+    margin: 8px -10px;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 1px solid rgb(37, 35, 46);
+    height: 180px;
+    padding: 0px;
+    color: rgb(37, 35, 46);
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.content a {
+    text-decoration: none;
+    color: rgb(37, 35, 46);
+}
+
+.content a:hover {
+    text-decoration: none;
+    color: rgb(57, 54, 70);
+    background-color: rgb(153, 209, 181);
+}
+
+.content img {
+    display: block;
+    width: 115%;
+    max-height: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 1px solid rgb(37, 35, 46);
+    margin-bottom: 9px;
+    transition: 200ms ease-in-out;
+}
+
+.content>img,
+.content>a {
+    transition: 200ms ease-in-out;
+}
+
+.content img:hover {
+    filter: grayscale(20%) opacity(77%);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+  
+/* ------------------------- */
+/* ----------OC BIO--------- */
+/* ------------------------- */
+.bio {
+    width: 100%;
+    height: 330px;
+    overflow: auto;
+    padding: 7px;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+  
+/* ------------------------- */
+/* ---------OC MENU--------- */
+/* ------------------------- */
+.ocdropdown {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/* ------------------------- */
+/* ---------OC MENU--------- */
+/* --------DROPDOWN--------- */
+/* ------------------------- */
+.ocdropdown .ocdropbtn {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    border: 1px solid rgb(37, 35, 46);
+    color: rgb(37, 35, 46);
+    padding: 10px;
+    background-color: rgb(136, 151, 124);
+    font-family: inherit; 
+    text-align: left;
+    margin: 0px; 
+}
+
+.ocdropdown:hover .ocdropdown-content {
+  display: block;
+}
+
+.ocdropdown-content {
+    font-size: 16px;
+    padding: 0px;
+    display: none;
+    position: absolute;
+    background-color: rgb(177, 186, 185);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: solid 1px rgb(37, 35, 46);
+    border-top: none;
+}
+
+.ocdropdown-content a {
+    float: none;
+    color: rgb(37, 35, 46);
+    padding: 4px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.ocdropdown-content a:hover {
+    background-color: rgb(64, 96, 85, 0.5);
+}
+
+.ocdropdown-content a:active {
+    background-color: rgb(64, 96, 85, 0.5);
+}
+
+.ocdropdown-content ul li {
+    list-style-image: url(assets/icons/greenstar.png);
+    text-align: left;
+    margin-left: 15px;
+}
+/* ------------------------- */
+/* ------------------------- */
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*----------------------------------OCS PAGES END--------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*-------------------------------COMMISSIONS PAGES-------------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----For Commissions----- */
+/* -------- Pricing---------- */
+/* ------------------------- */
+.examples {
+    width: 100%; 
+    max-height: 250px;
+    border: 1px solid rgb(86, 83, 99);
+    overflow: hidden;
+    background-color: transparent;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----For Commissions----- */
+/* ----- Pricing Menu------- */
+/* ------------------------- */
+.comsrow {
+    margin-top: 13px;
+    border: 0px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+  
+.comsrow img {
+    width: 30%;
+    height: auto;
+    border: 1px solid #777;
+    margin-left: 15px;
+    transition: 200ms ease-in-out;
+}
+  
+.comsrow > img,
+.comsrow > a {
+    transition: 200ms ease-in-out;
+}
+  
+.comsrow img:hover {
+    filter: grayscale(20%) opacity(77%);
+    transition: 200ms ease-in-out;
+}
+  
+.comsrow a:hover {
+    background-color: transparent;
+    transition: 200ms ease-in-out;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------For Commissions---- */
+/* ------Refsheet Page------ */
+/* ------------------------- */
+.meep {
+    display: inline-block;
+    border: 1px solid #777;
+    padding: 0px;
+    max-height: 252px;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+}
+
+.meep img {
+    height: 250px;
+    width: 100%;
+    transition: .3s;
+}
+
+.meep:hover img{
+    background-color: transparent;
+    filter: blur(2px) brightness(50%);
+    box-shadow: 0 0 16px rgb(255, 255, 255);
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------SOCIALS LINKS------ */
+/* ---------BUTTONS--------- */
+/* ------------------------- */
+.socials {
+    padding: 20px;
+    justify-content: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.socials a {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgb(47, 52, 55);
+    color: rgb(244, 244, 244);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    background-color: rgb(54, 65, 63);
+    color: rgb(185, 211, 146);
+}
+
+.socials a.active {
+    background-color: rgb(54, 65, 63);
+    color: rgb(185, 211, 146);
+}
+
+@media screen and (max-width: 900px) {
+    .socials {
+        padding: 23px;
+        margin: auto;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .socials a {
+        height: 48px;
+        width: 50px;
+        text-align: center;
+        padding: 13px 15px;
+        text-decoration: none;
+    }
+  }
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*-----------------------------COMMISSIONS PAGES END-----------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*------------------------------FOOTER + MEDIA QUERY-----------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------FOOTER--------- */
+/* ------------------------- */
+footer {
+                background-color: #003c80;
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 12px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+            h1 {
+              font-family:vib; 
+              font-size:60px; 
+              font-weight:bold;
+            }
+            h2 {
+              font-size:30px;
+              font-weight:normal;
+              }
+            h3 {
+              font-size:18px;
+              font-weight:normal;
+            }
+            strong {
+                /* this styles bold text */
+                color: #ED64F5;
+            }
+            p {
+              font-size:18px;
+              font-weight:normal;
+            }
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------MEDIA QUERY------- */
+/* ------------------------- */
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #rightSidebar {
+        order: 2;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
+/* ------------------------- */
+/* ------------------------- */
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*------------------------------CSS HELL HAS ENDED-------------------------------*/
+/*-----------------------------Thank you for coming~-----------------------------*/
+/*--------------------------------Have a nice day--------------------------------*/
+/*-------------------------------------------------------------------------------*/

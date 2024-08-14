@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HλLF-LIFE3</title>
+    </head>
+    <body>
+
+    
+        <video id="hl3" autoplay>
+          <source src="https://raw.githubusercontent.com/Asrob-1001/asrob.online/main/video/hl3.mp4" type="video/mp4">
+        </video>
+
+        <script>
+             $(document).ready(function() {
+             $('video').prop('muted',true).play()
+      });
+        </script>
+
+        <script id="RETURN HOME">
+        const video = document.getElementById('hl3');
+        
+        // Listen for the video 'ended' event
+        video.addEventListener('ended', function() {
+            // Redirect to the homepage
+            window.location.href="https://asrob.neocities.org/homepage_test.html"
+        });
+        </script>
+
+        <script>
+            // Function to remove the SCM music player script
+            function unloadSCMPlayer() {
+            var script = document.querySelector('script[src="https://www.scmplayer.net/script.js"]');
+            if (script) {
+                script.parentNode.removeChild(script);
+            }
+            }
+        
+            // Call the function to unload the SCM player script
+            unloadSCMPlayer();
+        </script>
+
+        <style>
+          #hl3 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This ensures the video covers the entire screen */
+          }
+        </style>
+    </body>
+</html>
+
