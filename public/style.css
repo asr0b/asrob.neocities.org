@@ -733,6 +733,9 @@ aside {
 
 }
 
+aside p {
+}
+
 aside h2 {
 
 }
@@ -751,8 +754,12 @@ aside hr {
 /* ---Usually for Sidebar--- */
 /* ------------------------- */
 .box {
+    background-color: #003c80;
+    border: 2px solid #ED64F5;
+    padding: 10px;
+    align-items: center;
+    font-weight: normal}
 
-}
 
 .box a {
     text-decoration: none;
@@ -769,18 +776,11 @@ aside hr {
     list-style-image: url(assets/icons/greenstar.png);
     text-align: left;
     margin-left: 0px;
+    align-items: center;
+    font-weight: normal;
+    font-size: 18px;
 }
 
-.box h2 {
-    font-size: 16px;
-    background-color: rgb(136, 151, 124, 0.5);
-    padding: 10px;
-    height: 35px;
-    width: 100%;
-    color: rgb(37, 35, 46);
-    text-align: left;
-    border: none;
-}
 
 .box hr {
     border-top: 1px solid rgb(37, 35, 46, 0.5);
