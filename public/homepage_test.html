@@ -175,9 +175,8 @@
                           // Play the selected audio file
                           audio.play();
 
-                          audio.addEvenetListener("ended", SCM.volume(100)); 
-
-                      }
+                          // Return SCM Volume to 100
+                          poem.addEventListener('ended', function () {SCM.Volume(100);});}
                 </script>
               <!--POEM BUTTON-->
             <a href="https://lukesmith.xyz"> <img src="images/buttonz/custom/luke.png" width="88" height="31"> </a>
