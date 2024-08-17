@@ -206,7 +206,7 @@ body {
     margin: 0;
     background-color: #08031A;
     background-size: 65px;
-    color: #fceaff;
+    color: #ffffff;
     background-image: var(--body-bg-image);};
 
 /* ------------------------- */
@@ -293,7 +293,7 @@ tr:nth-child(even) {
     /* this centers the entire page */}
 
 #container a {
-    color: #fceaff;
+    color: #ffffff;
     font-weight: normal;
     text-decoration: none;
     /* if you want to remove the underline */
@@ -323,7 +323,7 @@ tr:nth-child(even) {
     position: relative;
     text-align: center;
     width: 100%;
-    background-color: #5e4e8c;
+    background-color: #4099ff;
     /* header color here! */
     height: 150px;
     /* this is only for a background image! */
@@ -336,10 +336,10 @@ tr:nth-child(even) {
     align-items: center; /* Centers the content vertically */}
 
 #header h1 { 
-              font-size: vw; /* Scales font size based on viewport width */
-              text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
-              font-family: vib;
-              color: #ED64F5}
+    font-size: vw; /* Scales font size based on viewport width */
+    text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
+    font-family: vib;
+    color: #ED64F5}
 /* ------------------------- */
 /* ------------------------- */
 
@@ -407,7 +407,7 @@ font-size: 22px;}
 display: flex;
 flex-wrap: wrap;
 text-decoration: none;
-color: #fceaff;}            
+color: #ffffff;}            
 
 .asideNavbar {
     height: auto;
@@ -426,7 +426,7 @@ color: #fceaff;}
 display: flex;
 flex-wrap: wrap;
 text-decoration: none;
-color: #fceaff;}
+color: #ffffff;}
 /* ------------------------- */
 /* ------------------------- */
 
@@ -514,6 +514,7 @@ aside hr {
     background-color: #003c80;
     border: 2px solid #ED64F5;
     padding: 10px;
+    padding-left: 12px;
     align-items: center;
     font-weight: normal;}
 

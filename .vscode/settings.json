@@ -1,0 +1,10 @@
+{
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.CustomBrowser": "librewolf",
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "c:/users/asrob/OneDrive/Documents/.Air/GitHub/Websites/asrob.neocities.org/https/localhost.pem",
+    "key": "c:/users/asrob/OneDrive/Documents/.Air/GitHub/Websites/asrob.neocities.org/https/localhost.key",
+    "passphrase": "Likliklik123321@"
+  }
+}
