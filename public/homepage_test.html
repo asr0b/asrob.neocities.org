@@ -140,47 +140,54 @@
             <a href="https://orloktopia.neocities.org/"> <img src="images/buttonz/orloktopia_vamp.png" width="88" height="31"> </a>
             <a href="https://discord.gg/AkMaFUGuyp"> <img src="images/buttonz/gtower.gif" width="88" height="31"> </a>
             <a href="https://forums.interstate76.com/"> <img src="images/buttonz/custom/I76.png" width="88" height="31"> </a>
-              <!--POEM BUTTON-->
-                <img src="images/buttonz/custom/poems.png" alt="PLAY" onclick="play(), SCM.volume(10);
-">
-                <audio id="poem"></audio>
-                <script>
-                      // Array of audio file URLs
-                      var audioFiles = [
-                          'https://files.catbox.moe/y6iq83.wav',
-                          'https://files.catbox.moe/qjzfcc.wav',
-                          'https://files.catbox.moe/he12ci.wav',
-                          'https://files.catbox.moe/nm5lbt.wav',
-                          'https://files.catbox.moe/u4fwyu.wav',
-                          'https://files.catbox.moe/780bvi.wav',
-                          'https://files.catbox.moe/nipwmw.wav',
-                          'https://files.catbox.moe/o1fpeq.wav',
-                          'https://files.catbox.moe/gcnrq5.wav',
-                          'https://files.catbox.moe/8blbmg.wav',
-                          'https://files.catbox.moe/bovyqm.wav',
-                          'https://files.catbox.moe/14ay2l.wav',
-                          'https://files.catbox.moe/vq007p.wav',
-                          'https://files.catbox.moe/cne8r5.wav',
-                          'https://files.catbox.moe/bqddu9.wav',
-                          // Add more URLs as needed
-                      ];
-                      
-                      function play() {
-                          var audio = document.getElementById("poem");
-                          
-                          // Choose a random audio file from the array
-                          var randomIndex = Math.floor(Math.random() * audioFiles.length);
-                          audio.src = audioFiles[randomIndex];
-                          
-                          // Return SCM Volume to 100
-                          audio.addEventListener('ended', function () {SCM.Volume(100);});
+            <a id="poembutton">
 
-                          // Play the selected audio file
-                          audio.play();}
+              <img src="images/buttonz/custom/poems.png" alt="PLAY" onclick="play()">
 
+              <audio id="poem"></audio>
 
+              <script>
+                // Array of audio file URLs
+                var audioFiles = [
+                    'https://files.catbox.moe/y6iq83.wav',
+                    'https://files.catbox.moe/qjzfcc.wav',
+                    'https://files.catbox.moe/he12ci.wav',
+                    'https://files.catbox.moe/nm5lbt.wav',
+                    'https://files.catbox.moe/u4fwyu.wav',
+                    'https://files.catbox.moe/780bvi.wav',
+                    'https://files.catbox.moe/nipwmw.wav',
+                    'https://files.catbox.moe/o1fpeq.wav',
+                    'https://files.catbox.moe/gcnrq5.wav',
+                    'https://files.catbox.moe/8blbmg.wav',
+                    'https://files.catbox.moe/bovyqm.wav',
+                    'https://files.catbox.moe/14ay2l.wav',
+                    'https://files.catbox.moe/vq007p.wav',
+                    'https://files.catbox.moe/cne8r5.wav',
+                    'https://files.catbox.moe/bqddu9.wav',
+                    // Add more URLs as needed
+                ];
+                
+                function play() {
+                  var audio = document.getElementById("poem");
+
+                  // Choose a random audio file from the array
+                  var randomIndex = Math.floor(Math.random() * audioFiles.length);
+                  audio.src = audioFiles[randomIndex];
+
+                  // Lower SCM Volume
+                  SCM.volume(10);
+
+                  // Return SCM Volume to 100 after the audio ends
+                  audio.addEventListener('ended', function() {
+                      SCM.volume(100);
+                  });
+
+                  // Play the selected audio file
+                  audio.play();
+                }
                 </script>
-              <!--POEM BUTTON-->
+
+            </a>  
             <a href="https://lukesmith.xyz"> <img src="images/buttonz/custom/luke.png" width="88" height="31"> </a>
             <a href="https://infowars.com/show"> <img src="images/buttonz/custom/infowars.png" width="88" height="31"> </a>
             <a href="hl3"> <img src="images/buttonz/half-life.gif" width="88" height="31"> </a>                  
