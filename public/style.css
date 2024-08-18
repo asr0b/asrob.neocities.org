@@ -441,7 +441,10 @@ font-size: 22px;}
     flex-wrap:wrap;
     list-style-type: none;
     justify-content:space-evenly;
-    row-gap: 5px;}            
+    row-gap: 5px;
+    border: #77b6ff 5px;
+    border-style: ridge
+    }            
 
 #navbar a {
 display: flex;
@@ -474,7 +477,13 @@ main {
     flex: 1;
     padding: 20px;
     order: 1;
-    font-size: 18px;}
+    font-size: 18px;
+    border-bottom: #77b6ff 5px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: ridge;
+    }
 /* ------------------------- */
 /* ------------------------- */ 
 
@@ -502,12 +511,16 @@ iframe {
 /* ------------------------- */
 /* -------ASIDE AREA-------- */
 /* ------------------------- */
-aside {
-background-color: #4099ff;
-width: 220px;
-padding: 20px;
-font-size: 18px;
-/* this makes the sidebar text slightly smaller */}
+aside 
+{
+    background-color: #4099ff;
+    width: 220px;
+    padding: 20px;
+    font-size: 18px;
+    border: #77b6ff 5px;
+    border-style: ridge;
+    border-top: 0px;
+}
 
 aside hr {
     border-color: transparent;
