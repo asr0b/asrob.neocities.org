@@ -165,6 +165,32 @@ img {
 
 
 /* ------------------------- */
+/* --------SCROLLBARS------- */
+/* ------------------------- */
+
+/* WebKit browsers */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #003c80; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ED64F5; /* Color of the scroll thumb */
+    border-radius: 5px; /* Rounded corners for the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ED64F5; /* Color of the scroll thumb on hover */
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
 /* ----------FONTS---------- */
 /* ------------------------- */
 @font-face {
@@ -177,9 +203,6 @@ img {
 /* ------------------------- */
 
 /*------------------------------------\(^_^)/------------------------------------*/
-
-
-
 
 /* ------------------------- */
 /* -----------HTML---------- */
@@ -280,7 +303,6 @@ tr:nth-child(even) {
 
 /*------------------------------------\(^_^)/------------------------------------*/
 
-
 /* ------------------------- */
 /* ------SITE CONTAINER----- */
 /* ------------------------- */
@@ -303,6 +325,7 @@ tr:nth-child(even) {
 /* ------------------------- */
 
 /*------------------------------------\(^_^)/------------------------------------*/
+
 /* ------------------------- */
 /* ---------TOP BAR--------- */
 /* ------------------------- */
@@ -315,6 +338,7 @@ tr:nth-child(even) {
 /* ------------------------- */
 /* ------------------------- */
 
+/*------------------------------------\(^_^)/------------------------------------*/
 
 /* ------------------------- */
 /* ----------HEADER--------- */
@@ -409,29 +433,11 @@ flex-wrap: wrap;
 text-decoration: none;
 color: #ffffff;}            
 
-.asideNavbar {
-    height: auto;
-    width: fit-content;
-    background-color: #003c80;
-    /* navbar color */
-    padding: 10px;
-    padding-bottom: 9px;
-    display: flex;
-    flex-wrap:wrap;
-    list-style-type: none;
-    justify-content:space-evenly;
-    row-gap: 5px;}
 
-.asideNavbar a {
-display: flex;
-flex-wrap: wrap;
-text-decoration: none;
-color: #ffffff;}
 /* ------------------------- */
 /* ------------------------- */
 
 /*------------------------------------\(^_^)/------------------------------------*/
-
 
 /* ------------------------- */
 /* ---------FLEXBOX--------- */
@@ -452,7 +458,7 @@ main {
     flex: 1;
     padding: 20px;
     order: 1;
-    font-size: larger;}
+    font-size: 18px;}
 /* ------------------------- */
 /* ------------------------- */ 
 
@@ -485,7 +491,6 @@ background-color: #4099ff;
 width: 220px;
 padding: 20px;
 font-size: larger;
-
 /* this makes the sidebar text slightly smaller */}
 
 aside p {}
@@ -495,6 +500,33 @@ aside h2 {}
 aside hr {
     border-color: transparent;
     margin: 20px;}
+
+#blogHistory {
+background-color: #4099ff;
+width: 220px;
+padding: 5px;
+font-size: larger;
+padding-top: 20px;}
+
+.asideNavbar {
+    height: auto;
+    width: fit-content;
+    background-color: #003c80;
+    /* navbar color */
+    padding: 5px;
+    display: flex;
+    flex-wrap:wrap;
+    list-style-type: none;
+    justify-content:space-evenly;
+    row-gap: 5px;
+    border: solid #ED64F5 2px;
+    }
+
+.asideNavbar a {
+display: flex;
+flex-wrap: wrap;
+text-decoration: none;
+color: #ffffff;}
 
 #leftSidebar {
     order: 1;}
@@ -543,6 +575,56 @@ aside hr {
 .box hr {
     border-top: 1px solid rgb(37, 35, 46, 0.5);
 }
+
+.updateBox {
+    background-color: #003c80;
+    border: 2px solid #ED64F5;
+    padding: 10px;
+    padding-left: 10px;
+    align-items: center;
+    font-weight: normal;
+    max-height: 250px;
+    overflow: auto;
+    font-size: 18px;
+    
+}
+.updateBox h1 {
+    font-family: xp;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 2px; /* Adjust the space between text and underline */   
+    margin-right: 10px;
+    
+}
+
+.updateBox ul {
+    text-align: left; 
+    padding-left:10px;
+}
+.updateBox li {
+    padding-bottom: 15px;
+
+}
+/* WebKit browsers */
+.updateBox::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+}
+
+.updateBox::-webkit-scrollbar-track {
+    background: #003c80; /* Background color of the track */
+}
+
+.updateBox::-webkit-scrollbar-thumb {
+    background: #ED64F5; /* Color of the scroll thumb */
+    border-radius: 5px; /* Rounded corners for the scroll thumb */
+}
+
+.updateBox::-webkit-scrollbar-thumb:hover {
+    background: #ED64F5; /* Color of the scroll thumb on hover */
+}
+
 /* ------------------------- */
 /* ------------------------- */
 
