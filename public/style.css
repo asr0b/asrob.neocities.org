@@ -185,6 +185,23 @@ img {
 ::-webkit-scrollbar-thumb:hover {
     background: #ED64F5; /* Color of the scroll thumb on hover */
 }
+
+iframe::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+iframe::-webkit-scrollbar-track {
+    background: #003c80; /* Background color of the track */
+}
+
+iframe::-webkit-scrollbar-thumb {
+    background: #ED64F5; /* Color of the scroll thumb */
+    border-radius: 5px; /* Rounded corners for the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ED64F5; /* Color of the scroll thumb on hover */
+}
 /* ------------------------- */
 /* ------------------------- */
 
