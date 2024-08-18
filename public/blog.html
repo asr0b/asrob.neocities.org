@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron's Blog</title>    
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"> 
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style_blog.css" rel="stylesheet" type="text/css" media="all">
   </head>
   
   <body>
@@ -22,9 +22,10 @@
       <div id="headerArea">
 
         <div id=header>
+          <img src="images/gif/neko.gif" style="justify-content: left;"></img>
           <a id="headerText"
             style="text-decoration: none;" 
-            href="homepage_test.html" 
+            href="homepage.html" 
             onclick="SCM.loadPlaylist([
               {title:'Animal Crossing: City Folk - 10AM','url':'https://www.youtube.com/watch?v=uFq-VvnEa80&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=11'},
               {'title':'Animal Crossing: City Folk - 1PM','url':'https://www.youtube.com/watch?v=dAABrbS8QeA&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=14'},
@@ -53,12 +54,13 @@
               {'title':'Xerxes - .meditation (Variation 1)','url':'https://www.youtube.com/watch?v=5v_IxPB94_Y'}])">
             <h1>blog</h1>
           </a>
+          
         </div>
 
         <nav id="navbar">
 
           <a id="HOME"
-            class="button" href="homepage_test.html"
+            class="button" href="homepage.html"
             onclick="SCM.loadPlaylist([
               {title:'Animal Crossing: City Folk - 10AM','url':'https://www.youtube.com/watch?v=uFq-VvnEa80&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=11'},
               {'title':'Animal Crossing: City Folk - 1PM','url':'https://www.youtube.com/watch?v=dAABrbS8QeA&list=PLPJzeNv3Lr-k4ADlHhTNjokKMCd-q9kSH&index=14'},
@@ -127,21 +129,21 @@
 
       <div id="flex">
 
-        <aside id="blogHistory" style="align-items: center">
+        <aside id="leftSidebar" style="align-items: center; padding-bottom:800px;">
           <h2> History</h2><br>
           <nav class="asideNavbar">
-            <a class="button" href="homepage_test.html"><span>AUG 2024</span></a>
+            <a class="button" href="homepage.html"><span>AUG 2024</span></a>
 
         </nav>
         </aside>
 
         <main>
 
-          <h2 style="text-align: left; text-decoration: underline;">Blog!</h1>
+          <h2 style="text-align: left; text-decoration: underline;">A Blog is Born!</h1>
 
           <br>
 
-          <p style="font-size: 20px; text-align: left; padding: 10px; background-color: #003c80;"> 
+          <p class=box style=""> 
             
             I am Aaron (aka Asrob, aka Air) and this is my blog. This serves as a place for me to speak my mind. 
               
@@ -158,108 +160,7 @@
 
         </main>
 
-        <aside id="rightSidebar">
-
-          <h2>Updates</h2><br>
-
-          <div class="updateBox">
-            <ul>
-            <h1>August 17th, 2024</h1>
-            <li>Created this blog section, thinking about what to write...</li>
-            </ul>
-          </div>
-
-          <br>
-
-          <h2>buttonz:</h2>
-
-          <br>
-
-          <div id=BUTTONZ>
-            <a href="https://toontastic.sunrise.games/"> <img src="images/buttonz/toontown.webp" width="88" height="31"> </a>
-            <a href="https://steamcommunity.com/id/asrob1001/"> <img src="images/buttonz/steam.gif" width="88" height="31"> </a>
-            <a href="https://www.accursedfarms.com"> <img src="images/buttonz/accursed_farms.gif" width="88" height="31"> </a>
-            <a href="https://www.stopkillinggames.com"> <img src="images/buttonz/custom/stop_killing_games.gif" width="88" height="31"> </a>
-            <a href="https://orloktopia.neocities.org/"> <img src="images/buttonz/orloktopia_vamp.png" width="88" height="31"> </a>
-            <a href="https://discord.gg/AkMaFUGuyp"> <img src="images/buttonz/gtower.gif" width="88" height="31"> </a>
-            <a href="https://forums.interstate76.com/"> <img src="images/buttonz/custom/I76.png" width="88" height="31"> </a>
-            <a id="poembutton">
-
-              <img src="images/buttonz/custom/poems.png" alt="PLAY" onclick="play()">
-
-              <audio id="poem"></audio>
-
-              <script>
-                // Array of audio file URLs
-                var audioFiles = [
-                    'https://files.catbox.moe/y6iq83.wav',
-                    'https://files.catbox.moe/qjzfcc.wav',
-                    'https://files.catbox.moe/he12ci.wav',
-                    'https://files.catbox.moe/nm5lbt.wav',
-                    'https://files.catbox.moe/u4fwyu.wav',
-                    'https://files.catbox.moe/780bvi.wav',
-                    'https://files.catbox.moe/nipwmw.wav',
-                    'https://files.catbox.moe/o1fpeq.wav',
-                    'https://files.catbox.moe/gcnrq5.wav',
-                    'https://files.catbox.moe/8blbmg.wav',
-                    'https://files.catbox.moe/bovyqm.wav',
-                    'https://files.catbox.moe/14ay2l.wav',
-                    'https://files.catbox.moe/vq007p.wav',
-                    'https://files.catbox.moe/cne8r5.wav',
-                    'https://files.catbox.moe/bqddu9.wav',
-                    // Add more URLs as needed
-                ];
-                
-                function play() {
-                  var audio = document.getElementById("poem");
-
-                  // Choose a random audio file from the array
-                  var randomIndex = Math.floor(Math.random() * audioFiles.length);
-                  audio.src = audioFiles[randomIndex];
-
-                  // Lower SCM Volume
-                  SCM.volume(10);
-
-                  // Return SCM Volume to 100 after the audio ends
-                  audio.addEventListener('ended', function() {
-                      SCM.volume(50);
-                  });
-
-                  // Play the selected audio file
-                  audio.play();
-                }
-                </script>
-
-            </a>  
-            <a href="https://lukesmith.xyz"> <img src="images/buttonz/custom/luke.png" width="88" height="31"> </a>
-            <a href="https://infowars.com/show"> <img src="images/buttonz/custom/infowars.png" width="88" height="31"> </a>
-            <a href="https://bullsquid.com"> <img src="images/buttonz/half-life.gif" width="88" height="31"> </a>                  
-            <a href="https://teamfortress.com"> <img src="images/buttonz/custom/tf2.png" width="88" height="31"> </a>
-            <a href=""> <img src="images/buttonz/brothings.gif" width="88" height="31"> </a>
-            <a href="https://toontownrewritten.com"> <img src="images/buttonz/custom/ttr.png" width="88" height="31"> </a>
-            <a href="https://betacraft.uk"> <img src="images/buttonz/minecraft.gif" width="88" height="31"> </a>
-            <a href="https://bowlplusspringfield.com/"> <img src="images/buttonz/milktea.gif" width="88" height="31"> </a>
-            <a href="https://www.cheezit.com/en-us/home.html"> <img src="images/buttonz/cheezit.gif" width="88" height="31"> </a>
-            <a href="https://www.coca-cola.com/us/en/brands/coca-cola/products"> <img src="images/buttonz/coke.gif" width="88" height="31"> </a>
-            <a href="https://dry-creek-wrangler-school.myshopify.com/products/juniper-mountain-coffee-wrangler-roast"> <img src="images/buttonz/coffee.gif" width="88" height="31"> </a>
-            <a href="https://www.heavensgate.com/" target="blank"><img src="images/buttonz/heavens_gate.gif"/></a>
-            <a href="https://neocities.org"> <img src="images/buttonz/neocities.gif" width="88" height="31"> </a>
-            <a href="https://qixzy.neocities.org" target="blank"><img src="https://qixzy.neocities.org/assets/main/site-banner2.png"/></a>
-            <br>
-            <a href="https://neocities.org/site/asrob"> <img src="images/buttonz/custom/asrob.png" width="88" height="31"> </a>
-          </div>
-
-          <br><br>
-
-          <a href="https://youareanidiot.cc/">
-            <img src="https://99gifshop.neocities.org/items/new/smile.gif">
-          
-          
-          </a>
-
-          <br><br>
-
-        </aside>      
+  
       </div>
 
       <div id="footerArea">
@@ -369,7 +270,7 @@
       <div id="SCM MUSIC PLAYER">
     <!-- SCM Music Player https://www.scmplayer.net -->
     <script type="text/javascript" src="https://www.scmplayer.net/script.js" 
-      data-config="{'skin':'skins/aquaBlue/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Nintendo 3DS - System Settings','url':'https://www.youtube.com/watch?v=aKjkkLfY_As'}]}">
+      data-config="{'skin':'skins/scmGreen/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Nintendo 3DS - System Settings','url':'https://www.youtube.com/watch?v=aKjkkLfY_As'}]}">
     </script>
     <!-- SCM Music Player script end -->
       </div>
@@ -438,18 +339,27 @@
       
       <div id="SNOWFLAKES">
     <!-- add your 'snowflake' images below - you can add more or less if needed -->
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
-    <div class="snowflake"><img src="images/misc/fusia.png" style="width:20px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
+    <div class="snowflake"><img src="images/gif/neko.gif" style="width:50px;" /></div>
     </div>
     
       <div id="CLICK SPLOSION"> 
