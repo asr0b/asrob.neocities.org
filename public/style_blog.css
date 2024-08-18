@@ -1,0 +1,866 @@
+/*-------------------------------------------------------------------------------*/
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* Welcome to CSS hell */
+/* I maaay or not have stolen this css from someone to use as a template*/
+/* im sry pls dont sue >w< */
+/* stolen (with love) from: https://qixzy.neocities.org/ */
+/* Enjoy your stay */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------IMAGES--------- */
+/* ------------------------- */
+img {
+  max-width: 100%; 
+  height: auto;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------SNOWFLAKES :3------ */
+/* ------------------------- */
+@-webkit-keyframes snowflakes-fall {
+		0% {
+			top: -10%
+		}
+		100% {
+			top: 100%
+		}
+	}
+@-webkit-keyframes snowflakes-shake {
+		0%,
+		100% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0)
+		}
+		50% {
+			-webkit-transform: translateX(80px);
+			transform: translateX(80px)
+		}
+	}
+@keyframes snowflakes-fall {
+		0% {
+			top: -10%
+		}
+		100% {
+			top: 100%
+		}
+	}
+@keyframes snowflakes-shake {
+		0%,
+		100% {
+			transform: translateX(0)
+		}
+		50% {
+			transform: translateX(80px)
+		}
+	}
+.snowflake {
+		position: fixed;
+		top: -10%;
+		z-index: 9999;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-animation-name: snowflakes-fall, snowflakes-shake;
+		-webkit-animation-duration: 10s, 3s;
+		-webkit-animation-timing-function: linear, ease-in-out;
+		-webkit-animation-iteration-count: infinite, infinite;
+		-webkit-animation-play-state: running, running;
+		animation-name: snowflakes-fall, snowflakes-shake;
+		animation-duration: 10s, 3s;
+		animation-timing-function: linear, ease-in-out;
+		animation-iteration-count: infinite, infinite;
+		animation-play-state: running, running
+	}
+.snowflake:nth-of-type(0) {
+		left: 1%;
+		-webkit-animation-delay: 0s, 0s;
+		animation-delay: 0s, 0s
+	}
+.snowflake:nth-of-type(1) {
+		left: 10%;
+		-webkit-animation-delay: 1s, 1s;
+		animation-delay: 1s, 1s
+	}
+.snowflake:nth-of-type(2) {
+		left: 20%;
+		-webkit-animation-delay: 6s, .5s;
+		animation-delay: 6s, .5s
+	}
+.snowflake:nth-of-type(3) {
+		left: 30%;
+		-webkit-animation-delay: 4s, 2s;
+		animation-delay: 4s, 2s
+	}
+.snowflake:nth-of-type(4) {
+		left: 40%;
+		-webkit-animation-delay: 2s, 2s;
+		animation-delay: 2s, 2s
+	}
+.snowflake:nth-of-type(5) {
+		left: 50%;
+		-webkit-animation-delay: 8s, 3s;
+		animation-delay: 8s, 3s
+	}
+.snowflake:nth-of-type(6) {
+		left: 60%;
+		-webkit-animation-delay: 6s, 2s;
+		animation-delay: 6s, 2s
+	}
+.snowflake:nth-of-type(7) {
+		left: 70%;
+		-webkit-animation-delay: 2.5s, 1s;
+		animation-delay: 2.5s, 1s
+	}
+.snowflake:nth-of-type(8) {
+		left: 80%;
+		-webkit-animation-delay: 1s, 0s;
+		animation-delay: 1s, 0s
+	}
+.snowflake:nth-of-type(9) {
+		left: 90%;
+		-webkit-animation-delay: 3s, 1.5s;
+		animation-delay: 3s, 1.5s
+	}
+.snowflake:nth-of-type(10) {
+		left: 25%;
+		-webkit-animation-delay: 2s, 0s;
+		animation-delay: 2s, 0s
+	}
+.snowflake:nth-of-type(11) {
+		left: 65%;
+		-webkit-animation-delay: 4s, 2.5s;
+		animation-delay: 4s, 2.5s
+	}
+/* ------------------------- */
+/* ------------------------- */
+	
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----------ROOT---------- */
+/* ------------------------- */
+:root {
+    --header-image: url('images/backgrounds/catz_teal.png');
+    --body-bg-image: url('images/backgrounds/catz_teal.png');
+
+    /* colors */
+    --content: #c400ff;
+    }
+    * {
+        box-sizing: border-box;}    
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+
+/* ------------------------- */
+/* --------SCROLLBARS------- */
+/* ------------------------- */
+
+/* WebKit browsers */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #003c80; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ED64F5; /* Color of the scroll thumb */
+    border-radius: 5px; /* Rounded corners for the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ED64F5; /* Color of the scroll thumb on hover */
+}
+
+iframe::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+iframe::-webkit-scrollbar-track {
+    background: #003c80; /* Background color of the track */
+}
+
+iframe::-webkit-scrollbar-thumb {
+    background: #ED64F5; /* Color of the scroll thumb */
+    border-radius: 5px; /* Rounded corners for the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ED64F5; /* Color of the scroll thumb on hover */
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------FONTS---------- */
+/* ------------------------- */
+@font-face {
+  font-family: xp;
+  src: url('fonts/windows-xp-tahoma.ttf') format("truetype");}
+@font-face {
+  font-family: vib; 
+  src: url("fonts/vib-ribbon.ttf") format("truetype");}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----------HTML---------- */
+/* ------------------------- */
+html {
+    scroll-behavior: smooth;}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----------BODY---------- */
+/* ------------------------- */
+body { 
+    background-color: var(--content);
+    background-image: linear-gradient(to top, blue , #c400ff);
+    min-height: 100vh;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
+    font-family: xp;
+    cursor: url("images/curs0rz/toontown.png"), auto;
+    margin: 0;
+    background-color: #08031A;
+    background-size: 65px;
+    background-image: var(--body-bg-image);};
+
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+* {
+box-sizing: border-box;}
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------SPOILER TEXT------- */
+/* ------------------------- */
+del {
+    background: rgb(87, 87, 87);
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    transition: 200ms ease-in-out;
+}
+
+del:hover {
+    color: #e9e8e8;
+    transition: 200ms ease-in-out;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------SITE LINKS------- */
+/* ------------------------- */
+/*a {
+  transition: ms ease-in-out;
+}*/
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------TABLES--------- */
+/* ------------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5px;}
+
+th {
+    border: 1px solid rgb(56, 82, 76);
+    text-align: left;
+    padding: 8px;}
+
+th {
+    background-color: rgb(221, 226, 223, 0.5);}
+
+tr:nth-child(even) {
+    background-color: rgba(146, 140, 156, 0.5);}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*-----------------------------------MAIN SITE-----------------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ------SITE CONTAINER----- */
+/* ------------------------- */
+#container {
+    max-width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+    /* and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+#container a {
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+    /* if you want to remove the underline */
+    /* you can add a line below here that says: */
+    /* text-decoration:none; */}    
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ---------TOP BAR--------- */
+/* ------------------------- */
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: larger;
+    background-color: #008d57;}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------HEADER--------- */
+/* ------------------------- */
+#header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: #33ffc2;
+    /* header color here! */
+    height: 150px;
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+        you can add them directly to the <div id="header"></div> element! */
+    background-image: var(--header-image);
+    background-size: 25%;
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */}
+
+#header h1 { 
+    font-size: vw; /* Scales font size based on viewport width */
+    text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
+    font-family: vib;
+    color: #ffffff}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ---------BUTTONS--------- */
+/* ------------------------- */
+.button {
+    position: relative;
+    width: 88px;
+    height: 31px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(images/buttonz/navbar/outset.png);
+    background-repeat: no-repeat;
+    background-size: 88px 31px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    font-size: 22px;}
+
+.button:hover{
+    background-image: url(images/buttonz/navbar/inset.png)}
+
+.constructionButton {
+position: relative;
+width: 88px;
+height: 31px;
+justify-content: center;
+text-align: center;
+align-items: center;
+background-image: url(images/buttonz/navbar/outset.png);
+background-repeat: no-repeat;
+background-size: 88px 31px;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+font-size: 22px;}
+
+.constructionButton:hover{
+    background-image: url(images/buttonz/navbar/under_construction.png);}
+
+.constructionButton:hover span {
+              opacity: 0;}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -----NAVIGATION BAR------ */
+/* ------------------------- */
+#navbar {
+    height: auto;
+    background-color: #008d57;
+    /* navbar color */
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 9px;
+    display: flex;
+    flex-wrap:wrap;
+    list-style-type: none;
+    justify-content:space-evenly;
+    row-gap: 5px;}            
+
+#navbar a {
+display: flex;
+flex-wrap: wrap;
+text-decoration: none;
+color: #ffffff;}            
+
+
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ---------FLEXBOX--------- */
+/* ------------------------- */
+#flex {
+    display: flex;
+        border: solid #aeffbe 5px;
+border-style:outset;
+}
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------MAIN AREA-------- */
+/* ------------------------- */
+main {
+    background-color: #60ff80;
+    flex: 1;
+    padding: 20px;
+    order: 1;
+    font-size: 18px;
+    color: #ffffff
+    }
+/* ------------------------- */
+/* ------------------------- */ 
+
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------BOX IFRAMES------- */
+/* ------------------------- */
+.boxframe {
+    background-color: rgb(177, 186, 185);
+    border: 1px solid rgb(37, 35, 46);
+    padding: 0px;
+    height: 350px;
+    color: rgb(37, 35, 46);
+    margin-bottom: 30px;}
+
+iframe {
+    border: none;}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------ASIDE AREA-------- */
+/* ------------------------- */
+aside {
+background-color: #21e68a;
+width: 220px;
+padding: 5px;
+font-size: larger;
+/* this makes the sidebar text slightly smaller */}
+
+aside p {}
+
+aside h2 {}
+
+aside hr {
+    border-color: transparent;
+    margin: 20px;}
+
+.asideNavbar 
+{
+height: auto;
+width: fit-content;
+background-color: #008d57;
+/* navbar color */
+padding: 5px;
+display: flex;
+flex-wrap:wrap;
+list-style-type: none;
+justify-content:space-evenly;
+row-gap: 5px;
+border: solid #ffffff 10px;
+border-style:outset;
+}
+
+.asideNavbar a 
+{
+display: flex;
+flex-wrap: wrap;
+text-decoration: none;
+color: #ffffff;
+}
+
+#leftSidebar {
+    order: 1;}
+
+#rightSidebar {
+    order: 3;} 
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------INFO BOXES-------- */
+/* ---Usually for Sidebar--- */
+/* ------------------------- */
+.box {
+    background-color: #008d57;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    padding-left: 12px;
+    align-items: center;
+    font-weight: normal;
+    font-size: 20px; 
+    text-align: left; 
+    color: #ffffff;
+    padding: 10px; 
+    }
+
+
+.box a {
+    text-decoration: none;
+    color: rgb(57, 97, 90);
+}
+
+.box a:hover {
+    text-decoration: none;
+    background-color: rgb(74, 136, 111, 0.5);
+    color: rgb(37, 35, 46);
+}
+
+.box ul li {
+    list-style-image: url(assets/icons/greenstar.png);
+    text-align: left;
+    margin-left: 0px;
+    align-items: center;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+.box hr {
+    border-top: 1px solid rgb(37, 35, 46, 0.5);
+}
+
+.updateBox {
+    background-color: #008d57;
+    border: 2px solid #ED64F5;
+    padding: 10px;
+    padding-left: 10px;
+    align-items: center;
+    font-weight: normal;
+    max-height: 250px;
+    overflow: auto;
+    font-size: 18px;
+    
+}
+.updateBox h1 {
+    font-family: xp;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 2px; /* Adjust the space between text and underline */   
+    margin-right: 10px;
+    
+}
+
+.updateBox ul {
+    text-align: left; 
+    padding-left:10px;
+}
+.updateBox li {
+    padding-bottom: 15px;
+
+}
+/* WebKit browsers */
+.updateBox::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+}
+
+.updateBox::-webkit-scrollbar-track {
+    background: #003c80; /* Background color of the track */
+}
+
+.updateBox::-webkit-scrollbar-thumb {
+    background: #ED64F5; /* Color of the scroll thumb */
+    border-radius: 5px; /* Rounded corners for the scroll thumb */
+}
+
+.updateBox::-webkit-scrollbar-thumb:hover {
+    background: #ED64F5; /* Color of the scroll thumb on hover */
+}
+
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* --------QIXZY SAYS------- */
+/* ------------------------- */
+.janblr img {
+    width: 90%;
+    padding-bottom: -100px;
+}
+
+    .janblr img {
+      display: none;
+    }
+
+#janblr {
+    background-color: #d6d1d1;
+    font-size: 15px;
+    font-family: inherit;
+    color: rgb(37, 35, 46);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#janblr td,
+#janblr th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#janblr tr:nth-child(even) {
+    background-color: rgb(175, 174, 174)
+}
+
+#janblr a {
+    text-decoration: none;
+    color: rgb(57, 97, 90);
+}
+
+#janblr a:hover {
+    text-decoration: none;
+    background-color: rgb(74, 136, 111, 0.5);
+    color: rgb(37, 35, 46);
+}
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*------------------------------MAIN SITE STUFF END------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*-----------------------------------ABOUT PAGE----------------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ---------CAT INFO-------- */
+/* ------On About Page------ */
+/* ------------------------- */
+.catbox {  
+    width: 50%;    
+    border: none; 
+    padding: 10px;
+}  
+
+#cats {
+    background-color: rgb(177, 186, 185);
+    font-size: 17px;
+    font-family: inherit;
+    text-align: justify;
+    color: rgb(37, 35, 46);
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#cats td, #cats th {
+    border: none;
+    padding: 18px;
+}
+
+#cats h2 {
+    font-size: 18px;
+    background-color: rgb(136, 151, 124, 0.5);
+    padding: 9px;
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    color: rgb(37, 35, 46);
+    border: none;
+}
+
+.catainer {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 65, 63);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.catainer .card {
+    position: relative;
+    max-width: 100%;
+    background-color: rgb(177, 186, 185);
+    margin-bottom: 25px;
+    padding: 16px;
+    display: flex;
+    border: 1px solid rgb(37, 35, 46);
+}
+
+.catainer .card h2 {
+    font-size: 18px;
+    background-color: rgb(136, 151, 124, 0.5);
+    padding: 9px;
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    color: rgb(37, 35, 46);
+    border: none;
+}
+
+.catainer .card .imgBox {
+    max-width: 50%;
+    flex: 0 0 50%; 
+}
+
+.catainer .card .imgBox img{
+    max-width: 200%;
+}
+
+.catainer .card .catent {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/* ------------------------- */
+/* ------------------------- */ 
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*---------------------------------ABOUT PAGE END--------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+
+/*------------------------------------[][][][]-----------------------------------*/
+/*------------------------------FOOTER + MEDIA QUERY-----------------------------*/
+/*------------------------------------[][][][]-----------------------------------*/
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* ----------FOOTER--------- */
+/* ------------------------- */
+footer {
+    background-color: #008d57;
+    /* background color for footer */
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+    /* this centers the footer text */
+}
+h1 {
+    font-family:vib; 
+    font-size:60px; 
+    font-weight:bold;
+}
+h2 {
+    font-size:30px;
+    font-weight:normal;
+    }
+h3 {
+    font-size:18px;
+    font-weight:normal;
+}
+strong {
+    /* this styles bold text */
+    color: #ED64F5;
+}
+p {
+    font-size:18px;
+    font-weight:normal;
+}
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/* ------------------------- */
+/* -------MEDIA QUERY------- */
+/* ------------------------- */
+
+/* ------------------------- */
+/* ------------------------- */
+
+/*------------------------------------\(^_^)/------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+/*------------------------------CSS HELL HAS ENDED-------------------------------*/
+/*-----------------------------Thank you for coming~-----------------------------*/
+/*--------------------------------Have a nice day--------------------------------*/
+/*-------------------------------------------------------------------------------*/
