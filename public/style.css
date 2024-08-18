@@ -334,7 +334,6 @@ tr:nth-child(even) {
 #container a {
     color: #ffffff;
     font-weight: normal;
-    text-decoration: none;
     /* if you want to remove the underline */
     /* you can add a line below here that says: */
     /* text-decoration:none; */}    
@@ -507,23 +506,12 @@ aside {
 background-color: #4099ff;
 width: 220px;
 padding: 20px;
-font-size: larger;
+font-size: 18px;
 /* this makes the sidebar text slightly smaller */}
-
-aside p {}
-
-aside h2 {}
 
 aside hr {
     border-color: transparent;
     margin: 20px;}
-
-#blogHistory {
-background-color: #4099ff;
-width: 220px;
-padding: 5px;
-font-size: larger;
-padding-top: 20px;}
 
 .asideNavbar {
     height: auto;
@@ -569,14 +557,11 @@ color: #ffffff;}
 
 
 .box a {
-    text-decoration: none;
-    color: rgb(57, 97, 90);
+    text-decoration: underline white;
 }
 
 .box a:hover {
-    text-decoration: none;
-    background-color: rgb(74, 136, 111, 0.5);
-    color: rgb(37, 35, 46);
+    text-decoration: underline white;
 }
 
 .box ul li {
