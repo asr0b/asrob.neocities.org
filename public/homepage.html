@@ -21,13 +21,12 @@
 
       <div id="headerArea">
 
-        <div id=header>
+        <header id=header>
           <a id="headerText" 
             style="text-decoration: none;">
             <h1>asrob.online</h1>
           </a>
-        </div
-        >
+        </header>
 
 
         <nav id="navbar">
@@ -243,50 +242,6 @@
       </div>
       
     </div>
-    
-    <style>
-
-      /* BELOW THIS POINT IS MEDIA QUERY
-      so you wanna change the width of your page? 
-      by default, the container width is 900px.
-      in order to keep things responsive, take your new height,
-      and then subtrack it by 100. use this new number as the 
-      "max-width" value below */
-      @media screen and (max-width: 800px) {
-        #flex {
-            flex-wrap: wrap;
-        }
-
-        header h1 {
-        font-size: 8vw; /* Adjust the scaling for smaller screens */
-        }
-
-        aside {
-            width: 100%;
-        }
-
-        /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
-        main {
-            order: 1;
-        }
-
-        #leftSidebar {
-            order: 2;
-        }
-
-        #rightSidebar {
-            order: 3;
-        }
-
-        #navbar ul {
-            flex-wrap: wrap;
-            
-        }} 
-    
-    </style>
     
     <div id=SCRIPTS>
 
