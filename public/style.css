@@ -186,22 +186,6 @@ img {
     background: #ED64F5; /* Color of the scroll thumb on hover */
 }
 
-iframe::-webkit-scrollbar {
-    width: 5px; /* Width of the scrollbar */
-}
-
-iframe::-webkit-scrollbar-track {
-    background: #003c80; /* Background color of the track */
-}
-
-iframe::-webkit-scrollbar-thumb {
-    background: #ED64F5; /* Color of the scroll thumb */
-    border-radius: 5px; /* Rounded corners for the scroll thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #ED64F5; /* Color of the scroll thumb on hover */
-}
 /* ------------------------- */
 /* ------------------------- */
 
@@ -334,6 +318,8 @@ tr:nth-child(even) {
 #container a {
     color: #ffffff;
     font-weight: normal;
+    text-decoration: none;
+    
     /* if you want to remove the underline */
     /* you can add a line below here that says: */
     /* text-decoration:none; */}    
@@ -402,7 +388,7 @@ tr:nth-child(even) {
     background-image: url(images/buttonz/navbar/outset.png);
     background-repeat: no-repeat;
     background-size: 88px 31px;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     font-size: 22px;}
 
 .button:hover{
@@ -418,7 +404,7 @@ align-items: center;
 background-image: url(images/buttonz/navbar/outset.png);
 background-repeat: no-repeat;
 background-size: 88px 31px;
-text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 font-size: 22px;}
 
 .constructionButton:hover{
@@ -519,25 +505,29 @@ aside hr {
     border-color: transparent;
     margin: 20px;}
 
-.asideNavbar {
+.asideNavbar 
+{
     height: auto;
     width: fit-content;
-    background-color: #003c80;
+    background-color: #004e30;
     /* navbar color */
     padding: 5px;
     display: flex;
     flex-wrap:wrap;
+    margin: auto;
     list-style-type: none;
     justify-content:space-evenly;
     row-gap: 5px;
     border: solid #ED64F5 2px;
-    }
+}
 
-.asideNavbar a {
-display: flex;
-flex-wrap: wrap;
-text-decoration: none;
-color: #ffffff;}
+.asideNavbar a 
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #ffffff;
+}
 
 #leftSidebar {
     order: 1;}

@@ -385,7 +385,7 @@ tr:nth-child(even) {
     background-image: url(images/buttonz/navbar/outset.png);
     background-repeat: no-repeat;
     background-size: 88px 31px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     font-size: 22px;}
 
 .button:hover{
@@ -401,7 +401,7 @@ align-items: center;
 background-image: url(images/buttonz/navbar/outset.png);
 background-repeat: no-repeat;
 background-size: 88px 31px;
-text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 font-size: 22px;}
 
 .constructionButton:hover{
@@ -465,7 +465,6 @@ main {
     padding: 20px;
     order: 1;
     font-size: 18px;
-    color: #ffffff
     }
 /* ------------------------- */
 /* ------------------------- */ 
@@ -498,32 +497,28 @@ aside {
 background-color: #008a55;
 width: 220px;
 padding: 20px;
-font-size: larger;
-margin
+font-size: 18px;
 /* this makes the sidebar text slightly smaller */}
-
-aside p {}
-
-aside h2 {}
 
 aside hr {
     border-color: transparent;
     margin: 20px;}
 
+
 .asideNavbar 
 {
-height: auto;
-width: fit-content;
-background-color: #004e30;
-/* navbar color */
-padding: 5px;
-display: flex;
-flex-wrap:wrap;
-margin: auto;
-list-style-type: none;
-justify-content:space-evenly;
-row-gap: 5px;
-border: solid 2px #92fff0;
+    height: auto;
+    width: fit-content;
+    background-color: #004e30;
+    /* navbar color */
+    padding: 5px;
+    display: flex;
+    flex-wrap:wrap;
+    margin: auto;
+    list-style-type: none;
+    justify-content:space-evenly;
+    row-gap: 5px;
+    border: solid 2px #92fff0;
 }
 
 .asideNavbar a 
@@ -555,12 +550,7 @@ color: #ffffff;
     padding-left: 12px;
     align-items: center;
     font-weight: normal;
-    font-size: 20px; 
-    text-align: left; 
-    color: #ffffff;
-    padding: 10px; 
     }
-
 
 .box a {
     text-decoration: none;
