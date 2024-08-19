@@ -827,34 +827,40 @@ p {
 /* ------------------------- */
 /* -------MEDIA QUERY------- */
 /* ------------------------- */
-@media screen and (max-width: 800px) {
-  #flex {
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 800px) 
+{
+    #flex {
+        flex-wrap: wrap;
+    }
 
-  header h1 {
-    font-size: 12vw; /* Adjust the scaling for smaller screens */
-  }
+    header h1 {
+        font-size: 12vw; /* Adjust the scaling for smaller screens */
+    }
 
-  aside {
-    width: 100%;
-  }
+    aside {
+        width: 100%;
+    }
 
-  main {
-    order: 1;
-  }
+    main {
+        order: 1;
+    }
 
-  #leftSidebar {
-    order: 2;
-  }
+    #leftSidebar {
+        order: 2;
+    }
 
-  #rightSidebar {
-    order: 3;
-  }
+    #rightSidebar {
+        order: 3;
+    }
 
-  #navbar ul {
-    flex-wrap: wrap;
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+
+  html, body {
+    display: flex;
   }
+    
 }
 /* ------------------------- */
 /* ------------------------- */
