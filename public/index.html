@@ -10,7 +10,8 @@
   </head>
   
   <body>
-    <h1 style="font-family: vib; font-size: 7vw; padding-top: 10px;"> welcome!</h1>
+    <center>
+      <h1 style="font-family: vib; font-size: 7vw; padding-top: 10px;"> welcome!</h1>
     <p style="font-size: 23px; padding: 20px"> I am Aaron (aka Asrob, aka Air) and this is my webpage. There's not much here right now, but thanks for stopping by! 
     <br><br>
     jellybeans falling from the sky :D
@@ -35,7 +36,7 @@
     <br>
     <br>
     Last Updated: 8-18-24 <!--<p id="lastupdate"></p>-->
-
+    </center>
         <div MUSIC><iframe width="0" height="0" src="https://www.youtube.com/embed/lttQ47yZ-5A?si=JUONDZZXO-hQiDzk&amp;controls=0&amp;autoplay=1&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     <div IMAGE SCALING>
@@ -329,6 +330,56 @@ xhttp.send();
   <style>
   
   body {background-image: linear-gradient(to top, blue , #c400ff);}
-  
+  /* ------------------------- */
+  /* -------MEDIA QUERY------- */
+  /* ------------------------- */
+  @media screen and (max-width: 800px) 
+  {
+      
+      * {
+          margin: 0;
+          padding: 0;
+      }
+      #flex {
+          flex-wrap:inherit;
+      }
+
+
+
+      #navbar ul {
+          flex-wrap: wrap;
+      }
+
+    html, body {
+      display:inline;
+      margin: 0px;
+    }
+      
+  }
+  body 
+  { background-image: linear-gradient(to top, blue , #c400ff);
+    min-height: 100vh;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
+    font-family: xp;
+    cursor: url("images/curs0rz/toontown.png"), auto;
+    margin: 0;
+    background-color: #08031A;
+    background-size: 65px;
+  }
+  /* ------------------------- */
+  /* ------------------------- */
+
+  :root {
+    --header-image: url('images/backgrounds/catz_teal.png');
+    --body-bg-image: url('images/backgrounds/catz_teal.png');
+
+    /* colors */
+    --content: #c400ff;
+    }
+
+    * {
+        box-sizing: border-box;}   
   </style>
 </html>
