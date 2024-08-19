@@ -551,6 +551,13 @@ color: #ffffff;
     align-items: center;
     font-weight: normal;
     }
+.box p
+{
+    font-family: xp;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left
+}
 
 .box a {
     text-decoration: none;
