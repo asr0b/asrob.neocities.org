@@ -175,34 +175,18 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-    background: #003c80; /* Background color of the track */
+    background: #004e30; /* Background color of the track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ED64F5; /* Color of the scroll thumb */
+    background: #92fff0; /* Color of the scroll thumb */
     border-radius: 5px; /* Rounded corners for the scroll thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ED64F5; /* Color of the scroll thumb on hover */
+    background: #92fff0; /* Color of the scroll thumb on hover */
 }
 
-iframe::-webkit-scrollbar {
-    width: 5px; /* Width of the scrollbar */
-}
-
-iframe::-webkit-scrollbar-track {
-    background: #003c80; /* Background color of the track */
-}
-
-iframe::-webkit-scrollbar-thumb {
-    background: #ED64F5; /* Color of the scroll thumb */
-    border-radius: 5px; /* Rounded corners for the scroll thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #ED64F5; /* Color of the scroll thumb on hover */
-}
 /* ------------------------- */
 /* ------------------------- */
 
@@ -352,7 +336,7 @@ tr:nth-child(even) {
     height: 30px;
     padding: 10px;
     font-size: larger;
-    background-color: #008d57;}
+    background-color: #004e30;}
 /* ------------------------- */
 /* ------------------------- */
 
@@ -375,12 +359,13 @@ tr:nth-child(even) {
     background-size: 25%;
     display: flex; /* Enables flexbox for centering */
     justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */}
+    align-items: center; /* Centers the content vertically */
+    }
 
 #header h1 { 
     font-size: vw; /* Scales font size based on viewport width */
-    text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
-    font-family: vib;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+    font-family: xp;
     color: #ffffff}
 /* ------------------------- */
 /* ------------------------- */
@@ -400,7 +385,7 @@ tr:nth-child(even) {
     background-image: url(images/buttonz/navbar/outset.png);
     background-repeat: no-repeat;
     background-size: 88px 31px;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
     font-size: 22px;}
 
 .button:hover{
@@ -434,7 +419,7 @@ font-size: 22px;}
 /* ------------------------- */
 #navbar {
     height: auto;
-    background-color: #008d57;
+    background-color: #004e30;
     /* navbar color */
     width: 100%;
     padding: 10px;
@@ -460,10 +445,11 @@ color: #ffffff;}
 /* ------------------------- */
 /* ---------FLEXBOX--------- */
 /* ------------------------- */
-#flex {
+#flex 
+{
     display: flex;
-        border: solid #aeffbe 5px;
-border-style:outset;
+    text-shadow: 1px 1px 0px #000;
+
 }
 /* ------------------------- */
 /* ------------------------- */ 
@@ -474,11 +460,12 @@ border-style:outset;
 /* --------MAIN AREA-------- */
 /* ------------------------- */
 main {
-    background-color: #60ff80;
+    background-color: #00b871;
     flex: 1;
     padding: 20px;
     order: 1;
     font-size: 18px;
+    text-shadow: 1px 1px 0px #000;
     color: #ffffff
     }
 /* ------------------------- */
@@ -509,10 +496,11 @@ iframe {
 /* -------ASIDE AREA-------- */
 /* ------------------------- */
 aside {
-background-color: #21e68a;
+background-color: #008a55;
 width: 220px;
-padding: 5px;
+padding: 20px;
 font-size: larger;
+margin
 /* this makes the sidebar text slightly smaller */}
 
 aside p {}
@@ -527,16 +515,16 @@ aside hr {
 {
 height: auto;
 width: fit-content;
-background-color: #008d57;
+background-color: #004e30;
 /* navbar color */
 padding: 5px;
 display: flex;
 flex-wrap:wrap;
+margin: auto;
 list-style-type: none;
 justify-content:space-evenly;
 row-gap: 5px;
-border: solid #ffffff 10px;
-border-style:outset;
+border: solid 2px #92fff0;
 }
 
 .asideNavbar a 
@@ -562,8 +550,8 @@ color: #ffffff;
 /* ---Usually for Sidebar--- */
 /* ------------------------- */
 .box {
-    background-color: #008d57;
-    border: 2px solid #ffffff;
+    background-color: #004e30;
+    border: 2px solid #92fff0;
     padding: 10px;
     padding-left: 12px;
     align-items: center;
@@ -601,8 +589,8 @@ color: #ffffff;
 }
 
 .updateBox {
-    background-color: #008d57;
-    border: 2px solid #ED64F5;
+    background-color: #004e30;
+    border: 2px solid #92fff0;
     padding: 10px;
     padding-left: 10px;
     align-items: center;
@@ -637,16 +625,16 @@ color: #ffffff;
 }
 
 .updateBox::-webkit-scrollbar-track {
-    background: #003c80; /* Background color of the track */
+    background: #004e30; /* Background color of the track */
 }
 
 .updateBox::-webkit-scrollbar-thumb {
-    background: #ED64F5; /* Color of the scroll thumb */
+    background: #92fff0; /* Color of the scroll thumb */
     border-radius: 5px; /* Rounded corners for the scroll thumb */
 }
 
 .updateBox::-webkit-scrollbar-thumb:hover {
-    background: #ED64F5; /* Color of the scroll thumb on hover */
+    background: #92fff0; /* Color of the scroll thumb on hover */
 }
 
 /* ------------------------- */
@@ -816,7 +804,7 @@ color: #ffffff;
 /* ----------FOOTER--------- */
 /* ------------------------- */
 footer {
-    background-color: #008d57;
+    background-color: #004e30;
     /* background color for footer */
     width: 100%;
     height: 40px;
