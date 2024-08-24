@@ -19,6 +19,12 @@ img {
   max-width: 100%; 
   height: auto;
 }
+
+#basil {
+width: 150px;
+height: 150px;
+margin-top: 200px;
+}
 /* ------------------------- */
 /* ------------------------- */
 
@@ -868,9 +874,13 @@ p {
         flex-wrap: wrap;
     }
 
-  html, body {
-    display: flex;
-  }
+    html, body {
+        display: flex;
+    }
+
+    #basil {
+    margin-top: 30px;
+    }
     
 }
 /* ------------------------- */
