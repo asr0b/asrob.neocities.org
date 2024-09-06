@@ -4,9 +4,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>    
-    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"> 
+    <title>asrob.online</title>    
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Options: default, black, black-translucent -->
+    <!-- Favicon for desktop browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon.ico>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon.ico">
+    <!-- Favicon for Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.ico">
+    <!-- Favicon for Android devices -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/favicon.ico">
+    <!-- Favicon for Microsoft devices -->
+  <meta name="msapplication-TileImage" content="images/favicon/favicon.ico">
   </head>
   
   <body>
@@ -21,13 +30,12 @@
 
       <div id="headerArea">
 
-        <div id=header>
+        <header id=header>
           <a id="headerText" 
             style="text-decoration: none;">
-            <h1>about me</h1>
+            <h1>asrob.online</h1>
           </a>
-        </div
-        >
+        </header>
 
 
         <nav id="navbar">
@@ -38,7 +46,7 @@
           <a id="BLOG BUTTON" 
             class="button" 
             href="blog.html" 
-            onclick="SCM.skin('skins/aquaGreen/skin.css');SCM.loadPlaylist([
+            onclick="SCM.loadPlaylist([
               {'title':'Nintendo 3DS - System Settings','url':'https://www.youtube.com/watch?v=aKjkkLfY_As'}])">
             <span>BLOG</span>
           </a
@@ -97,7 +105,11 @@
 
           <img src="images/gif/apu_band.gif">
 
-          <p> I am Aaron (aka Asrob, aka Air) and this is my webpage. There's not much here right now, but thanks for stopping by!</p>
+          <p> 
+            I am Aaron (aka Asrob, aka Air).
+            <br> 
+            I hail from the great golden state of California.
+          </p>
 
           <br>
 
@@ -205,6 +217,7 @@
 
             </a>  
             <a href="https://lukesmith.xyz"> <img src="images/buttonz/custom/luke.png" width="88" height="31"> </a>
+            <a href="https://larbs.xyz"> <img src="images/buttonz/larbs.gif" width="88" height="31"> </a>
             <a href="https://infowars.com/show"> <img src="images/buttonz/custom/infowars.png" width="88" height="31"> </a>
             <a href="https://bullsquid.com"> <img src="images/buttonz/half-life.gif" width="88" height="31"> </a>                  
             <a href="https://teamfortress.com"> <img src="images/buttonz/custom/tf2.png" width="88" height="31"> </a>
@@ -246,50 +259,6 @@
       </div>
       
     </div>
-    
-    <style>
-
-      /* BELOW THIS POINT IS MEDIA QUERY
-      so you wanna change the width of your page? 
-      by default, the container width is 900px.
-      in order to keep things responsive, take your new height,
-      and then subtrack it by 100. use this new number as the 
-      "max-width" value below */
-      @media screen and (max-width: 800px) {
-        #flex {
-            flex-wrap: wrap;
-        }
-
-        header h1 {
-        font-size: 8vw; /* Adjust the scaling for smaller screens */
-        }
-
-        aside {
-            width: 100%;
-        }
-
-        /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
-        main {
-            order: 1;
-        }
-
-        #leftSidebar {
-            order: 2;
-        }
-
-        #rightSidebar {
-            order: 3;
-        }
-
-        #navbar ul {
-            flex-wrap: wrap;
-            
-        }} 
-    
-    </style>
     
     <div id=SCRIPTS>
 
