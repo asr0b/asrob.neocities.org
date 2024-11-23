@@ -1,11 +1,11 @@
 {
   "liveServer.settings.port": 5501,
-  "liveServer.settings.CustomBrowser": "chrome",
-  // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:/Program Files/LibreWolf/librewolf.exe",
+  "liveServer.settings.CustomBrowser": "librewolf",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:/Program Files/LibreWolf/librewolf.exe",
   "liveServer.settings.https": {
     "enable": true,
-    "cert": "c:/users/asrob/OneDrive/Documents/.Air/GitHub/Websites/asrob.neocities.org/https/localhost.pem",
-    "key": "c:/users/asrob/OneDrive/Documents/.Air/GitHub/Websites/asrob.neocities.org/https/localhost.key",
+    "cert": "c:/users/asrob/OneDrive/Documents/gitHub/Websites/asrob.neocities.org/https/localhost.pem",
+    "key": "c:/users/asrob/OneDrive/Documents/gitHub/Websites/asrob.neocities.org/https/localhost.key",
     "passphrase": "Likliklik123321@"
   }
 }
